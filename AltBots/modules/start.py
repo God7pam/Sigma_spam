@@ -5,14 +5,15 @@ from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 
 START_BUTTON = [
     [
-        Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
+        Button.inline("⚡ᏨᎾᎷᎷᎯᏁᎠᏕ⚡", data="help_back")
     ],
     [
-        Button.url("• ᥴhᥲnnᥱᥣ  •", "https://t.me/team_smoker"),
-        Button.url("• sᥙρρort •", "https://t.me/team_smoker")
+        Button.url("⚡ᏕᏬᏢᏢᎾᏒᎿ⚡ ", "https://t.me/team_smoker"),
+        Button.url("⚡ᏨᎻᎯᏁᏁᎬᏝ⚡", "https://t.me/team_smoker")
+        
     ],
     [
-        Button.url("• ｒｅｐｏ •", "https://t.me/team_smoker")
+        Button.url("⚡ᏒᎬᏢᎾ⚡", "https://t.me/team_smoker")
     ]
 ]
 
@@ -34,10 +35,10 @@ async def start(event):
         bot_name = AltBot.first_name
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝐀xᴇɴ](https://t.me/PyXen)**\n\n"
-        TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
-        TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
-        TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
+        TEXT += f"» ** 𝙼𝚢 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : [𝐀xᴇɴ](https://t.me/sigma_addiction)**\n\n"
+        TEXT += f"» ** 𝙱𝙾𝚃𝚂 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:** `M3.3`\n"
+        TEXT += f"» ** 𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:** `3.11.3`\n"
+        TEXT += f"» **Ｇｏｄ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
                     "https://graph.org/file/e4f8b9803871961dbad87.jpg",
