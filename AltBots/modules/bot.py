@@ -24,7 +24,7 @@ async def ping(e):
         altron = await e.reply(f"» __ᴀʟᴛʀᴏɴ__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"__🤖 ᴘɪɴɢ__\n» `{mp} ᴍꜱ`")
+        await altron.edit(f"__ＧＯＤ ＳＰＡＭ__\n» `{mp} ᴍꜱ`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
+        await e.reply(f"`🇸 🇺 🇩 🇴 🇺 🇸 🇪 🇷`")
         try:
             await X1.disconnect()
         except Exception:
