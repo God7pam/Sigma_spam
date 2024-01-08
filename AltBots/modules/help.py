@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"ＧＯＤ ＳＰＡＭ HELP MENU ⚡\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @sigma_addiction**"
+HELP_STRING = f"ǤØĐ SƗǤMȺ ⚡\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @sigma_addiction**"
 
 HELP_BUTTON = [
     [
@@ -14,8 +14,8 @@ HELP_BUTTON = [
       Button.inline("• ᴇxᴛʀᴀ •", data="extra")
     ],
     [
-      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/team_smoker"),
-      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/team_smoker")
+      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/sigma_addiction"),
+      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/sigma_addiction")
     ]
   ]
 
@@ -34,7 +34,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://graph.org/file/e4f8b9803871961dbad87.jpg",
+              "https://graph.org/file/d76990b1e2de0bbf2bc1e.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -60,7 +60,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @team_smoker**
+**© @sigma_addiction**
 """
 
                  
@@ -109,7 +109,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-** © @team_smoker**
+** ⚡@sigma_addiction**
 """                     
            
            
@@ -136,8 +136,8 @@ async def helpback(event):
                 Button.inline("• ᴇxᴛʀᴀ •", data="extra")
               ],
               [
-                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/team_smoker"),
-                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/team_smoker")
+                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/sigma_addiction"),
+                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/sigma_addiction")
               ]
             ]
           )
@@ -180,7 +180,13 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("SIGMA ADDICTION!! @team_smoker", cache_time=0, alert=True)
+        await event.answer("SIGMA ADDICTION!! @sigma_addiction", cache_time=0, alert=True)
+        
+                           
+                           
+                           
+                           
+                           
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,4 +205,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("SIGMA ADDICTION !! @team_smoker", cache_time=0, alert=True)
+        await event.answer("SIGMA ADDICTION !! @sigma_addiction", cache_time=0, alert=True)
